@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8906344169664236345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3511165487820346618}
+  - component: {fileID: 3966970967588829768}
+  - component: {fileID: 6657427354270638805}
+  - component: {fileID: 2489140349714609366}
+  - component: {fileID: 541397864824219602}
+  - component: {fileID: 3201815639916040451}
+  m_Layer: 0
+  m_Name: 5 Plea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3511165487820346618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 521.65485, y: 155.24306, z: -127.27459}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3966970967588829768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3a644cfc17f624c9c2876670075184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fighterName: Plea
+  attacks:
+  - {fileID: 6657427354270638805}
+  - {fileID: 2489140349714609366}
+  - {fileID: 541397864824219602}
+  - {fileID: 3201815639916040451}
+  image: {fileID: 21300000, guid: 33fb0c379d27d9b469ca0025fe82e781, type: 3}
+  baseStrength: 15
+  baseDefense: 15
+  baseSpeed: 15
+  baseHps: 400
+  baseEnergy: 10
+  lastAttackReceived: {fileID: 0}
+  lastSkillDone: {fileID: 0}
+  OnTurnStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTurnEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAttackReceivedEnded:
+    m_PersistentCalls:
+      m_Calls: []
+  OnS:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSkillDone:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargeted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUntargeted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6657427354270638805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93403f207552d84294b5b7790effda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackName: Claw
+  attackDesc: Use its claws to attack an enemy
+  isOffensive: 1
+  isDefensive: 0
+  strenghtChange: 0
+  defenseChange: 0
+  speedChange: 0
+  isArea: 0
+  isSelfCast: 0
+  canChooseTargets: 1
+  affectsOnlyEnemies: 1
+  affectsOnlyAllies: 0
+  isRecover: 0
+  targetAnimationTrigger: Explode
+  casterAnimationTrigger: Heal
+  attackSoundIndex: 3
+  selfSoundIndex: 0
+  baseCost: 1
+  maxTargets: 1
+  baseDamage: 10
+  baseHealing: 0
+  multiplyEvent: {fileID: 0}
+  multiplyEventIcon: {fileID: 0}
+--- !u!114 &2489140349714609366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93403f207552d84294b5b7790effda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackName: Smash
+  attackDesc: Crushes two rivals with his paws
+  isOffensive: 1
+  isDefensive: 0
+  strenghtChange: 0
+  defenseChange: 0
+  speedChange: 0
+  isArea: 1
+  isSelfCast: 0
+  canChooseTargets: 1
+  affectsOnlyEnemies: 1
+  affectsOnlyAllies: 0
+  isRecover: 0
+  targetAnimationTrigger: Explode
+  casterAnimationTrigger: Heal
+  attackSoundIndex: 3
+  selfSoundIndex: 0
+  baseCost: 3
+  maxTargets: 2
+  baseDamage: 15
+  baseHealing: 0
+  multiplyEvent: {fileID: 4086037801393604273, guid: d131503206cae354297fb4bd15e3825a,
+    type: 3}
+  multiplyEventIcon: {fileID: -7681053457232232723, guid: 8030299f98a3d6841895ce980f0b41a0,
+    type: 3}
+--- !u!114 &541397864824219602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93403f207552d84294b5b7790effda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackName: Chirp
+  attackDesc: Deals damage to all enemies
+  isOffensive: 1
+  isDefensive: 0
+  strenghtChange: 0
+  defenseChange: 0
+  speedChange: 0
+  isArea: 1
+  isSelfCast: 0
+  canChooseTargets: 0
+  affectsOnlyEnemies: 1
+  affectsOnlyAllies: 0
+  isRecover: 0
+  targetAnimationTrigger: Explode
+  casterAnimationTrigger: Heal
+  attackSoundIndex: 3
+  selfSoundIndex: 0
+  baseCost: 5
+  maxTargets: 0
+  baseDamage: 10
+  baseHealing: 0
+  multiplyEvent: {fileID: 4934181666586709473, guid: 4c295d61925a4974388b20fd45ae1b86,
+    type: 3}
+  multiplyEventIcon: {fileID: 21300000, guid: 11117294b0cd53549847b8086cbd01e8, type: 3}
+--- !u!114 &3201815639916040451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906344169664236345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93403f207552d84294b5b7790effda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackName: Rest
+  attackDesc: Restores all energy
+  isOffensive: 0
+  isDefensive: 1
+  strenghtChange: 0
+  defenseChange: 0
+  speedChange: 0
+  isArea: 0
+  isSelfCast: 1
+  canChooseTargets: 0
+  affectsOnlyEnemies: 0
+  affectsOnlyAllies: 0
+  isRecover: 1
+  targetAnimationTrigger: Explode
+  casterAnimationTrigger: Heal
+  attackSoundIndex: 5
+  selfSoundIndex: 0
+  baseCost: 0
+  maxTargets: 0
+  baseDamage: 0
+  baseHealing: 0
+  multiplyEvent: {fileID: 0}
+  multiplyEventIcon: {fileID: 0}
